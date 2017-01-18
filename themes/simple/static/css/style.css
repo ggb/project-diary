@@ -1,0 +1,70 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333;
+  padding-top: 7em;
+}
+
+.entry-title, .entry-title a {
+  color: #111;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.entry-title a:visited, .entry-title a:hover {
+  color: #666;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+time {
+  color: #999;
+  margin-left: -100px;
+}
+
+.post-info {
+  display: inline-block;
+}
+
+.article-header {
+  display: inline-block;
+}
+
+#content ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.entry-content a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.entry-content a:hover, .entry-content a:visited {
+  color: #999;
+  text-decoration: underline dotted #999;
+}
+
+.entry-content img {
+  max-width: 500px;
+}
+
+footer.home-link {
+  text-align: center;
+}
+
+footer.home-link a {
+  padding: 3em;
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+
+footer.home-link a:hover, footer.home-link a:visited {
+  color: #999;
+}
