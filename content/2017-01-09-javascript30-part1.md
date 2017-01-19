@@ -1,4 +1,4 @@
-Title: JavaScript 30
+Title: JavaScript 30 (Part 1)
 Date: 2017-01-09 11:20
 Category: Programming
 
