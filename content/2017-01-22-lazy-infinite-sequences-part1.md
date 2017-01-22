@@ -1,4 +1,4 @@
-Title: Programming Languages C (Part1)
+Title: Lazy, infinite sequences (Part1)
 Date: 2017-01-22 11:20
 Category: Programming
 
