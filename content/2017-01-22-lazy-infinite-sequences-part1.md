@@ -1,4 +1,4 @@
-Title: Lazy, infinite sequences (Part1)
+Title: Lazy, infinite sequences (Part 1)
 Date: 2017-01-22 11:20
 Category: Programming
 
