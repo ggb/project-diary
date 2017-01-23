@@ -24,7 +24,7 @@ To create an infinite sequence we need a thunk, that returns a tuple of a value 
     :::javascript
     const ones = () => [1, ones]
 
-In this case the first value is a '1'. Whats about our thunk-recipe to create more '1's? We know, that it should return again a tuple with a '1' and a thunk, that, if called returns a tuple with a '1' and a thunk-recipe. We already know, how that should look like: It is our ones-function! That is why the second thing in our tuple is the ones-function (recursion...).
+In this case the first value is a '1'. What about our thunk-recipe to create more '1's? We know, that it should return again a tuple with a '1' and a thunk, that (if called) returns a tuple with a '1' and a thunk-recipe. We already know, how that should look like: It is our ones-function! That is why the second thing in our tuple is the ones-function (recursion...).
 
 Call it like:
 
