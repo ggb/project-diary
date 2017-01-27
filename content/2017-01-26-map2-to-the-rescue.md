@@ -33,7 +33,9 @@ Say, this function is called by another function that calculates the min- and ma
       in
         sliceSize slices min max 
 
-This does not look very elegant and while it is okay in this case, their might be other cases where it is not appropriate to choose 0 as default value for a min- or max-value. So it is time to rethink the problem and try something else. Second solution:
+This is not very elegant and while it is okay in this case, their might be other cases where it is not appropriate to choose 0 as default value for a min- or max-value. 
+
+Time to rethink the problem and try something else. Second solution:
 
     :::elm
     getSliceSize' : Int -> List Int -> Maybe Float
@@ -48,9 +50,9 @@ This does not look very elegant and while it is okay in this case, their might b
         Nothing ->
           Nothing
 
-While this behaves much better it looks awkward and is way too much typing. One thing that is different to our former solution is, that the return-type changed. It is not longer Float, but Maybe Float. This is okay and -- in fact -- a bonus: Now it is not longer implicit how to treat cases, where there is nor min-, neither a max-value and the calling code has to explicitly handle special (error) cases.
+This behaves much better, but it looks awkward and is way too much typing. One thing that is different to the former solution is, that the return-type changed. It is not longer Float, but Maybe Float. This is okay and -- in fact -- a bonus: Now it is not longer implicit how to treat cases, where there is nor min-, neither a max-value. The calling code has to explicitly handle special (error) cases.
 
-There has to be a better solution, I thought, that is shorter and achieves the same. So I looked how this is solved in other languages (Haskell), because I thought that functions on Functors or Monads may be a solution for this. And while that is true, it is much easier to take a look into the Elm docs and what other functions the [Maybe-module](http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Maybe) provides. The final solution:
+I thought, there has to be a better solution, that is shorter and achieves the same. So I looked how this is solved in other languages (Haskell), because I thought that functions on Functors or Monads may be a solution for this. And while that is true, it is much easier to take a look into the Elm docs and what other functions the [Maybe-module](http://package.elm-lang.org/packages/elm-lang/core/3.0.0/Maybe) provides. The final solution:
 
     :::elm
     getSliceSize'' : Int -> List Int -> Maybe Float
@@ -62,4 +64,4 @@ There has to be a better solution, I thought, that is shorter and achieves the s
 
 There is no need to handle the Just's or Nothing's yourself, the Maybe.map2 (and of course there are map, map3, map4 and map5) does this for you: If one of the incoming values is Nothing than the result will be Nothing. Else the (Just) values for min and max are taken to compute the result. 
 
-I was very happy when I figured out this elegant solution and I think that this is not obvious when you start writing Elm code. If you think that this is not the best solution or if you have an even better one, than please leave a comment below. 
+I was very happy when I figured out this elegant solution. I think this is not obvious when you start writing Elm code. If you think that this is not the best solution or if you have an even better one, than please leave a comment below. 
