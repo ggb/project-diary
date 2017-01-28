@@ -8,7 +8,10 @@ SITEURL = ''
 
 THEME = './themes/simple'
 SUMMARY_MAX_LENGTH = None
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 
 PATH = 'content'
 
