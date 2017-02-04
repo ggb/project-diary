@@ -6,9 +6,3 @@ Status: draft
 A simple platform:
 
 ![Some game assets]({filename}/images/simple_platform.png)
-
-<div id="testo"></div>
-<script>
-  const testo = document.querySelector("#testo")
-  console.log(testo)
-</script>
