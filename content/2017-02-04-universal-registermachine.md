@@ -2,7 +2,7 @@ Title: Universal Register Machine
 Date: 2017-02-04 10:20
 Category: Programming
 
-I just updated [some old Elm code](https://gist.github.com/ggb/d528132e9293d43e0cc0) from 0.17 to 0.18. The code is used to simulate a Universal Register Machine, the gif below shows the edition of two numbers. If you would like to run your own URM-code just change the program inside the Elm snippet and update the registers as you like. 
+I just updated [some old Elm code](https://gist.github.com/ggb/d528132e9293d43e0cc0) from 0.17 to 0.18. The code is used to simulate a Universal Register Machine, the gif below shows the addition of two numbers. If you would like to run your own URM-code just copy the code from the gist to [elm-lang.org/try](http://www.elm-lang.org/try), change the program inside the Elm snippet and update the registers as you like. 
 
 ![URM]({filename}/images/urm_simulation.gif)
 
